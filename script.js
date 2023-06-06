@@ -14,11 +14,32 @@ function showMainPage() {
       });
   }
   
-  function showLoginPage() {
-    document.getElementById('loginPage').style.display = 'block';
+  function showHomePage() {
+    document.getElementById('homePage').style.display = 'block';
+    document.getElementById('loginPage').style.display = 'none';
+    document.getElementById('registerPage').style.display = 'none';
     document.getElementById('mainPage').style.display = 'none';
     document.getElementById('detailPage').style.display = 'none';
   }
+  
+  function showLoginPage() {
+    document.getElementById('homePage').style.display = 'none';
+    document.getElementById('loginPage').style.display = 'block';
+    document.getElementById('registerPage').style.display = 'none';
+    document.getElementById('mainPage').style.display = 'none';
+    document.getElementById('detailPage').style.display = 'none';
+  }
+  
+  function showRegisterPage() {
+    document.getElementById('homePage').style.display = 'none';
+    document.getElementById('loginPage').style.display = 'none';
+    document.getElementById('registerPage').style.display = 'block';
+    document.getElementById('mainPage').style.display = 'none';
+    document.getElementById('detailPage').style.display = 'none';
+  }
+  
+  // Ajoutez le reste de votre code JavaScript ici
+  
   
   function showUser(id) {
     document.getElementById('mainPage').style.display = 'none';

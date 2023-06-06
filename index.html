@@ -5,22 +5,32 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div id="loginPage">
+  <div id="homePage">
+    <h1>Accueil</h1>
+    <button onclick="showLoginPage()">Se connecter</button>
+    <button onclick="showRegisterPage()">S'inscrire</button>
+  </div>
+
+  <div id="loginPage" style="display: none;">
     <h1>Connexion</h1>
     <input type="email" id="loginEmail" placeholder="Email">
     <input type="password" id="loginPassword" placeholder="Password">
     <button onclick="login()">Se connecter</button>
+    <button onclick="showHomePage()">Retour</button>
+  </div>
+
+  <div id="registerPage" style="display: none;">
     <h1>Inscription</h1>
     <input type="email" id="registerEmail" placeholder="Email">
     <input type="password" id="registerPassword" placeholder="Password">
     <button onclick="register()">S'inscrire</button>
+    <button onclick="showHomePage()">Retour</button>
   </div>
-  
 
   <div id="mainPage" style="display: none;">
     <h1>Page principale</h1>
     <div id="userList"></div>
-    <button onclick="showLoginPage()">Se déconnecter</button>
+    <button onclick="showHomePage()">Se déconnecter</button>
   </div>
 
   <div id="detailPage" style="display: none;">
