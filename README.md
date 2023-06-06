@@ -13,27 +13,27 @@ CRM MDS est un mini CRM avec des tests fonctionnels, unitaires et de charge.
 
 1. Clonez le dépôt du projet :
 
-    ```bash
-    git clone https://github.com/ArelleM/crm.git
-    ```
+   ```bash
+   git clone https://github.com/ArelleM/crm.git
+   ```
 
 2. Accédez au répertoire du projet :
 
-    ```bash
-    cd <crm>
-    ```
+   ```bash
+   cd <crm>
+   ```
 
 3. Installez les dépendances du projet :
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 4. Installez Locust :
 
-    ```bash
-    pip install locust
-    ```
+   ```bash
+   pip install locust
+   ```
 
 ## Utilisation
 
@@ -41,25 +41,25 @@ CRM MDS est un mini CRM avec des tests fonctionnels, unitaires et de charge.
 
    ```bash
     npm run start
-    ```
+   ```
 
 2. Pour exécuter les tests Jest :
 
-    ```bash
-    npm run test
-    ```
+   ```bash
+   npm run test
+   ```
 
 3. Pour exécuter les tests Cypress :
 
-    ```bash
-    npm run cy:run
-    ```
+   ```bash
+   npx cypress open
+   ```
 
 4. Pour exécuter les tests de charge avec Locust, exécutez la commande suivante et accédez à `http://localhost:8089` pour commencer un test :
 
-    ```bash
-    locust -f locustfile.py
-    ```
+   ```bash
+   locust -f locustfile.py
+   ```
 
 ## Interprétation des résultats
 
@@ -69,7 +69,7 @@ Les résultats des tests Jest seront affichés dans le terminal après l'exécut
 
 ### Cypress
 
-Les résultats des tests Cypress seront affichés dans le terminal après l'exécution de `npm run cy:run`. Vous pouvez également voir des captures d'écran et des vidéos des tests en échec dans le dossier `cypress/screenshots` et `cypress/videos`, respectivement.
+Les résultats des tests Cypress seront affichés dans le terminal après l'exécution de `npx cypress open`.
 
 ### Locust
 
