@@ -39,7 +39,9 @@ CRM MDS est un mini CRM avec des tests fonctionnels, unitaires et de charge.
 
 1. Pour exécuter l'application :
 
-   Ouvrir index.html
+   ```bash
+    npm run start
+    ```
 
 2. Pour exécuter les tests Jest :
 
