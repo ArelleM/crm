@@ -1,6 +1,6 @@
 # CRM MDS
 
-Description courte de votre projet ici.
+CRM MDS est un mini CRM avec des tests fonctionnels, unitaires et de charge.
 
 ## Prérequis
 
