@@ -7,11 +7,9 @@ describe('User Detail Page Test', () => {
     });
   
     it('Shows user detail information', () => {
-      // Cliquez sur le bouton 'voir le détail' de l'utilisateur (adaptez-le à votre véritable structure HTML)
       cy.get('button').contains('voir le détail').first().click();
   
   
-      // Vérifiez les informations de l'utilisateur (adaptez ces sélecteurs à vos vrais sélecteurs HTML)
       cy.get('#userDetails .email').should('be.visible');
       cy.get('#userDetails .firstName').should('be.visible');
       cy.get('#userDetails .lastName').should('be.visible');
