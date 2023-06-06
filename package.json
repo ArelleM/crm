@@ -16,7 +16,5 @@
     "url": "https://github.com/ArelleM/crm/issues"
   },
   "homepage": "https://github.com/ArelleM/crm#readme",
-  "dependencies": {
-    "tailwindcss": "^3.3.2"
-  }
+  "dependencies": {}
 }
