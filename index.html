@@ -7,8 +7,15 @@
 <body>
   <div id="loginPage">
     <h1>Connexion</h1>
-    <button onclick="showMainPage()">Se connecter</button>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="login()">Se connecter</button>
+    <h1>Inscription</h1>
+    <input type="email" id="registerEmail" placeholder="Email">
+    <input type="password" id="registerPassword" placeholder="Password">
+    <button onclick="register()">S'inscrire</button>
   </div>
+  
 
   <div id="mainPage" style="display: none;">
     <h1>Page principale</h1>
