@@ -5,7 +5,7 @@ class WebsiteUser(HttpUser):
 
     @task
     def login(self):
-        self.client.post("/api/login", json={"email": "user@example.com", "password": "password"})
+        self.client.post("/api/login", json={"email": "eve.holt@reqres.in", "password": "pistol"})
 
     @task
     def view_users(self):
