@@ -1,9 +1,10 @@
 describe('User Detail Page Test', () => {
     beforeEach(() => {
-      cy.visit('localhost:3000');
-      cy.get('#loginEmail').type('test@test.com');
-      cy.get('#loginPassword').type('password123');
-      cy.get('#loginPage button').click();
+        cy.visit('localhost:3000');  // Remplacez ceci par l'URL de votre application
+        cy.get('a[href="#"]').contains('Connexion').click();
+        cy.get('#loginEmail').type('eve.holt@reqres.in');
+        cy.get('#loginPassword').type('pistol');
+        cy.get('button').contains('Connexion').click();
     });
   
     it('Shows user detail information', () => {
